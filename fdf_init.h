@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_err.c                                        :+:      :+:    :+:   */
+/*   fdf_init.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: seunghoy <seunghoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/21 20:49:25 by seunghoy          #+#    #+#             */
-/*   Updated: 2023/03/21 21:00:41 by seunghoy         ###   ########.fr       */
+/*   Created: 2023/03/21 20:57:39 by seunghoy          #+#    #+#             */
+/*   Updated: 2023/03/21 20:58:35 by seunghoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	check_open_fd(char *path, int fd)
-{
-	if (fd != -1)
-		return ;
-	perr_exit("open error at reading .fdf file", 1);
-}
+#ifndef FDF_INIT_H
+# define FDF_INIT_H
 
-char	*check_gnl(char *gnl_line)
-{
-	if (gnl_line == (char *)1)
-	{
-		perr_exit("gnl error at reading .fdf file", 1);
-		return (0);
-	}
-	return (gnl_line);
-}
+# define INIT_ACCUM 50
+
+#endif

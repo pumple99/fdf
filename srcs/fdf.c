@@ -6,13 +6,15 @@
 /*   By: seunghoy <seunghoy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 20:42:53 by seunghoy          #+#    #+#             */
-/*   Updated: 2023/03/21 20:44:00 by seunghoy         ###   ########.fr       */
+/*   Updated: 2023/03/21 20:55:56 by seunghoy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int main(int argc, char *argv[])
 {
+	int	fd;
+	
 	if (argc != 2)
 		return (0);
-	
+	fd = open(argv[1]);
 }
